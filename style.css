@@ -1,0 +1,44 @@
+:root {
+    --bg-color: #eceff4;
+    --caret-color: #8fbcbb;
+    --main-color: #8fbcbb;
+    --sub-color: #6a7791;
+    --sub-alt-color: #d8dee9;
+    --text-color: #8fbcbb;
+    --error-color: #bf616a;
+    --error-extra-color: #793e44;
+    --colorful-error-color: #bf616a;
+    --colorful-error-extra-color: #793e44;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat';
+    color: var(--sub-color);
+}
+
+#wish {
+    color: var(--sub-color);
+}
+
+button {
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--sub-alt-color);
+    color: var(--sub-color);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    cursor: pointer;
+    font: bolder;
+}
+
+.gift {
+    height: 80px;
+    width: auto;
+    cursor: pointer;
+}
+
+#count-gift {
+    background-color: var(--caret-color);
+    color: #fff;
+}
