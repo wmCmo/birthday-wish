@@ -53,7 +53,7 @@ const changeCake = () => {
         alert("You haven't made any wish!");
         return;
     }
-    cake.src = '/public/svg/cake.svg';
+    cake.src = 'public/svg/cake.svg';
     cake.removeEventListener('click', changeCake);
     cake.style.removeProperty('cursor');
     confetti();
@@ -80,7 +80,7 @@ function confettiAtElement(element) {
 function openGift(e) {
     switch (count) {
         case 0:
-            e.target.src = `/public/svg/${order[0]}.svg`;
+            e.target.src = `public/svg/${order[0]}.svg`;
             win.play();
             confettiAtElement(e.target);
             break;
@@ -88,7 +88,7 @@ function openGift(e) {
             e.target.src = 'public/svg/rolling-eyes.svg';
             break;
         case 2:
-            e.target.src = `/public/svg/${order[1]}.svg`;
+            e.target.src = `public/svg/${order[1]}.svg`;
             applause.play();
             confettiAtElement(e.target);
             congrats2.style.display = 'block';
